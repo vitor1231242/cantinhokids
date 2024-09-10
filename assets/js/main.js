@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (user && user.email === email && user.password === password) {
             alert('Login bem-sucedido!');
-            window.location.href = '/home/escola/Downloads/TCC - 4TI/login(ESSE E O TOP)/TCC - 4TI/index.html'; // Redireciona para uma página de boas-vindas após o login bem-sucedido
+            window.location.href = '/workspaces/cantinhokids/TCC - 4TI/index.html'; // Redireciona para uma página de boas-vindas após o login bem-sucedido
         } else {
             alert('Email ou senha incorretos!');
         }
