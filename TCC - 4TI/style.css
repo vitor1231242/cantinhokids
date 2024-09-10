@@ -1,0 +1,79 @@
+body {
+    background-image: url('imagens/Kids.gif'); /* Substitua pelo caminho da sua imagem */
+    background-size: cover; /* A imagem cobre toda a área */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Não repete a imagem */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh; /* Define a altura como 100% da altura da viewport */
+    overflow: hidden;
+}
+
+
+.banner img {
+    width: 100%;
+    height: auto;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px; /* Espaçamento entre os botões */
+    position: absolute;
+    top: 60%; /* Centraliza verticalmente */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta a posição para centralização exata */
+}
+
+.botao-redondo, .botao-redondo2 {
+    border-radius: 50%; /* Define o raio para 50% para tornar o botão redondo */
+    width: 20vw; /* Define o tamanho relativo à largura da viewport */
+    height: 20vw; /* Define o tamanho relativo à largura da viewport */
+    max-width: 250px; /* Define o tamanho máximo */
+    max-height: 250px; /* Define o tamanho máximo */
+    background-color: #a3d8ff; /* Cor de fundo */
+    color: #ffffff; /* Cor do texto */
+    font-size: 16px; /* Tamanho da fonte */
+    border: none; /* Remove a borda */
+    cursor: pointer; /* Cursor de ponteiro quando passa por cima */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.botao-redondo:hover, .botao-redondo2:hover {
+    transform: scale(1.1); /* Aumenta o tamanho do botão em 10% quando o mouse passa por cima */
+}
+
+.icon {
+    width: 50%;
+    height: auto;
+}
+
+.footer-buttons {
+    position: absolute;
+    bottom: 20px; /* Posiciona os ícones próximos ao rodapé */
+    right: 20px; /* Alinha os ícones à direita da página */
+    display: flex;
+    gap: 20px; /* Espaçamento entre os ícones */
+}
+
+.footer-icon {
+    width: 10vw; /* Define o tamanho relativo à largura da viewport */
+    max-width: 50px; /* Define o tamanho máximo */
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .botao-redondo, .botao-redondo2 {
+        width: 25vw; /* Ajuste de tamanho para telas menores */
+        height: 25vw;
+    }
+
+    .footer-icon {
+        width: 15vw; /* Ajuste de tamanho para telas menores */
+    }
+}
